@@ -12,6 +12,14 @@ button {
   cursor: pointer;
 }
 
+.error{
+  color: red;
+}
+.js-form{
+  display: flex;
+flex-direction: column;
+}
+
 input {
   display: block;
   /* outline: none; */
@@ -65,6 +73,57 @@ body {
 .header-search-container {
   position: relative;
 }
+
+/* overlay starts */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/* overlay ends */
 
 .header-search-container .search-field {
   font-size: 2rem;
@@ -137,24 +196,24 @@ body {
 .banner-content {
   background-color: antiquewhite;
   position: absolute;
-  bottom: 4rem;
-  left: 4rem;
-  /* right: 4rem; */
-  padding: 1rem 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  /* right: 6rem; */
+  padding: 0.5rem 0.5rem;
   border-radius: 1rem;
 }
 
 .banner-subtitle {
   color: rgb(99, 98, 96);
-  font-size: 3rem;
+  font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: 2px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .banner-title {
   color: rgb(126, 125, 123);
-  font-size: 1.5rem;
+  font-size: 0.5rem;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -167,7 +226,7 @@ body {
   background-color: rgb(99, 98, 96);
   color: white;
   width: max-content;
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: 600;
   text-transform: uppercase;
   padding: 5px 10px;
@@ -183,6 +242,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-direction: column;
   justify-content: space-around;
   padding: 6rem;
   border-radius: 1rem;
@@ -231,11 +291,12 @@ body {
 
 .showcase-container {
   display: flex;
+  flex-direction: column;
   /* max-width:max-content; */
   /* padding: 6rem; */
   gap: 4rem;
   align-items: center;
-  /* justify-content: space-around; */
+ 
 }
 
 .showcase-container .showcase-rating {
@@ -475,8 +536,10 @@ body {
 }
 .footer-row {
   display: flex;
-  padding: 4rem 0rem;
+  /* padding: 4rem 0rem; */
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .footer-column h3 {
@@ -781,12 +844,12 @@ body {
   }
 
   .banner-content {
-    bottom: 4rem;
-    left: 4rem;
+    bottom: 0.6rem;
+    left: 0.6rem;
   }
 
   .banner-subtitle {
-    font-size: 3rem
+    font-size: 1rem
   }
 
   .banner-title {

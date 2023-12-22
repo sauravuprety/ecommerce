@@ -1,17 +1,15 @@
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>E-Commerce</title>
-  <link rel="stylesheet" href="./style.css" />
-  <script src="./main.js"></script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Validation</title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <!--top nav bar -->
+      <!--top nav bar -->
   <div class="header-top">
     <div class="container">
       <ul class="header-social-container">
@@ -88,7 +86,25 @@
       <ul class="desktop-menu-category-list">
         <li class="menu-category">
           <a href="" class="menu-title">Home</a>
-        
+          <div class="dropdown-panel">
+            <ul class="dropdown-panel-list">
+              <li class="menu-title">
+                <a href="">Electronics</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="">Laptop</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="">mobile</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="">ipad</a>
+              </li>
+              <li class="panel-list-item">
+                <img src="./assets/images/mens-banner.jpg" alt="" />
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="menu-category">
           <a href="" class="menu-title"> Categories</a>
@@ -244,172 +260,21 @@
         </li>
       </ul>
     </div>
-   
   </nav>
-  <img src="./assets/images/menu.png" class="menu-icon" onclick="openNav()" />
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <ul id="MenuItems">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="shop.html">Categories</a>
-        </li>
-        <li>
-          <a href="gallery.html">About</a>
-        </li>
-        <li>
-          <a href="contact.html">Product</a>
-        </li>
-        <li>
-          <a href="about.html">Conatct</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- main section -->
   <main>
-    <!-- banner section -->
-    <div class="banner">
-      <div class="container">
-        <div class="slider-container has-scrollbar">
-          <div class="slider-item">
-            <img src="./assets/images/banner-1.jpg"  alt="" />
-            <div class="banner-content">
-              <p class="banner-subtitle">Trending Item</p>
-              <h2 class="banner-title">Women Fashion</h2>
-              <p class="banner-text">Starting at Rs 99</p>
-              <a href="" class="banner-btn">Shop Now</a>
-              <!-- <button onclick="showAlert()">Shop Now</button> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-featured">
-      <h2 class="title">Deal of the day</h2>
-      <div class="showcase-container">
-        <div class="showcase-banner">
-          <img src="./assets/images/blog-3.jpg" width="100%" alt="" />
-        </div>
-        <div class="showcase-content">
-          <div class="showcase-rating">
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-            <ion-icon name="star-outline"></ion-icon>
-          </div>
-          <h2 class="showcase-title">Electronics Item on Sale</h2>
-          <p class="showcase-desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia,
-            animi.
-          </p>
-          <div class="price-box">
-            <p class="price">Rs.1000</p>
-            <del>Rs.2000</del>
-          </div>
-          <div class="add-cart-btn">Add To Cart</div>
-          <div class="showcase-status">
-            <div class="wrapper">
-              <p>Sold : <b>20</b></p>
-              <p>Available : <b>30</b></p>
-            </div>
-          </div>
-          <div class="countdown-box">
-            <p class="countdown-desc">Hurry up for exiting fetaures <ion-icon name="gift-outline"></ion-icon><ion-icon
-                name="gift-outline"></ion-icon><ion-icon name="gift-outline"></ion-icon> </p>
-            <div class="countdown">
-              <div class="countdown-content">
-                <p class="display-number">360</p>
-                <p class="display-text">D</p>
-              </div>
-              <div class="countdown-dot">
-                <p>:</p>
-              </div>
-              <div class="countdown-content">
-                <p class="display-number">24</p>
-                <p class="display-text">H</p>
-              </div>
-              <div class="countdown-dot">
-                <p>:</p>
-              </div>
-              <div class="countdown-content">
-                <p class="display-number">55</p>
-                <p class="display-text">M</p>
-              </div>
-              <div class="countdown-dot">
-                <p>:</p>
-              </div>
-              <div class="countdown-content">
-                <p class="display-number">12</p>
-                <p class="display-text">S</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Category section -->
-    <div class="category">
-      <h1 class="category-title">Recommend Products</h1>
-      <div class="container">
-        <div class="category-item-container has-scrollbar">
-          <div class="category-item">
-            <div class="category-img-box">
-              <img src="./assets/images/blog-1.jpg" alt="" />
-            </div>
-            <div class="category-content-box">
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Mobile</h3>
-                <p class="category-item-amount">Rs 1200</p>
-              </div>
-              <a href="" class="category-btn">Buy Now</a>
-            </div>
-          </div>
-          <div class="category-item">
-            <div class="category-img-box">
-              <img src="./assets/images/blog-2.jpg" alt="" />
-            </div>
-            <div class="category-content-box">
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Bags</h3>
-                <p class="category-item-amount">Rs 1800</p>
-              </div>
-              <a href="" class="category-btn">Buy Now</a>
-            </div>
-          </div>
-          <div class="category-item">
-            <div class="category-img-box">
-              <img src="./assets/images/blog-3.jpg" alt="" />
-            </div>
-            <div class="category-content-box">
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Dress</h3>
-                <p class="category-item-amount">Rs 1700</p>
-              </div>
-              <a href="" class="category-btn">Buy Now</a>
-            </div>
-          </div>
-          <div class="category-item">
-            <div class="category-img-box">
-              <img src="./assets/images/blog-4.jpg" alt="" />
-            </div>
-            <div class="category-content-box">
-              <div class="category-content-flex">
-                <h3 class="category-item-title">Shoes</h3>
-                <p class="category-item-amount">Rs 1900</p>
-              </div>
-              <a href="" class="category-btn">Buy Now</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h2 class="contact-us">Conatct Us</h2>
+    <form class="js-form" id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span><br>
+        <label for="address">Name:</label>
+        <input type="text" id="address" name="address">
+        <span id="addressError" class="error"></span><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span><br>
+        <input type="submit" value="submit">
+    </form>
   </main>
   <footer>
     <div class="main-footer">
@@ -502,13 +367,7 @@
 
   </footer>
 
-
-
-
-  <!-- icons cdn script -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
 </body>
 
 </html>
